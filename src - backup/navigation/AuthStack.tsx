@@ -24,7 +24,7 @@ const AuthStack: React.FC<AuthStackProps> = ({ onLoginSuccess }) => {
         animation: "default",
       }}
       >
-      {(props: any) => <LoginScreen {...props} onLoginSuccess={onLoginSuccess} />}
+      {(props) => <LoginScreen {...props} onLoginSuccess={onLoginSuccess} />}
       </Stack.Screen>
       <Stack.Screen
       name="Signup"
@@ -32,7 +32,7 @@ const AuthStack: React.FC<AuthStackProps> = ({ onLoginSuccess }) => {
         animation: "slide_from_right",
       }}
       >
-      {(props: any) => <SignupScreen {...props} onLoginSuccess={onLoginSuccess} />}
+      {(props) => <SignupScreen {...props} onLoginSuccess={onLoginSuccess} />}
       </Stack.Screen>
     </Stack.Navigator>
   )

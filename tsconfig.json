@@ -35,7 +35,15 @@
     ".next/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "app",
+    "app/**",
+    "components",
+    "components/**",
+    "src - backup",
+    ".next",
+    "public",
+    "styles"
   ],
   "extends": "expo/tsconfig.base"
 }

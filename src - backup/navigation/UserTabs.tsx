@@ -45,8 +45,8 @@ const UserTabs: React.FC<UserTabsProps> = ({ userName, onLogout }) => {
 
   return (
     <Tab.Navigator
-      screenOptions={({ route }: any) => ({
-        tabBarIcon: ({ focused, color, size }: any) => {
+      screenOptions={({ route }) => ({
+        tabBarIcon: ({ focused, color, size }) => {
           let iconName: keyof typeof Ionicons.glyphMap = "home"
           if (route.name === "Home") {
             iconName = focused ? "home" : "home-outline"
