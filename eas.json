@@ -5,14 +5,21 @@
   },
   "build": {
     "development": {
+      "workflow": "managed",
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      "android": { "buildType": "apk" },
+      "ios": { "simulator": true }
     },
     "preview": {
-      "distribution": "internal"
+      "workflow": "managed",
+      "distribution": "internal",
+      "android": { "buildType": "app-bundle" }
     },
     "production": {
-      "autoIncrement": true
+      "workflow": "managed",
+      "autoIncrement": true,
+      "android": { "buildType": "app-bundle" }
     }
   },
   "submit": {

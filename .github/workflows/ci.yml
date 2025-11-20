@@ -19,7 +19,12 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies (clean)
-        run: npm ci --include=dev
+        run: |
+          node -v
+          npm -v
+          echo "Package versions:"
+          node -e "console.log(require('./package.json').name + '@' + require('./package.json').version)"
+          npm ci --include=dev --loglevel verbose
 
       - name: Type check
         run: npx tsc --noEmit
