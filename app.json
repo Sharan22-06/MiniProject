@@ -1,12 +1,12 @@
 {
   "expo": {
-    "extra": {
-      "eas": {
-        "projectId": "a5a25837-5a3a-40ce-a357-f22cbb3cee9c"
-      }
-    },
+    
     "android": {
       "package": "com.sharankumbhar.myv0project"
-    }
+    },
+    "owner": "sharankumbhar",
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
